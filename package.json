@@ -1,0 +1,33 @@
+{
+  "name": "@unibtc/manifest",
+  "version": "1.0.0",
+  "description": "manifest module for nuxtjs",
+  "private": false,
+  "engines": {
+    "node": ">=8 <=10"
+  },
+  "main": "index.js",
+  "keywords": [
+    "manifest nuxtjs"
+  ],
+  "author": "Uni Sayo <unibtc@gmail.com>",
+  "license": "MIT",
+  "repository": "https://github.com/uniibu/pwa-manifest",
+  "bugs": {
+    "url": "https://github.com/uniibu/pwa-manifest/issues"
+  },
+  "homepage": "https://github.com/uniibu/pwa-manifest#readme",
+  "scripts": {
+    "patch": "npm version patch && npm publish",
+    "minor": "npm version minor && npm publish",
+    "major": "npm version major && npm publish",
+    "postpublish": "git push origin master --follow-tags",
+    "lint": "eslint --fix --ext .js ."
+  },
+  "devDependencies": {
+    "eslint": "^5.1.0"
+  },
+  "dependencies": {
+    "hash-sum": "^1.0.2"
+  }
+}
